@@ -11,7 +11,8 @@
     "start": "webpack serve --open --mode development --config webpack.config.js",
     "test": "jest -u --config jest.config.js",
     "watch:test": "jest -u --watchAll --config jest.config.js",
-    "dev:deploy": "firebase deploy -P default",
+    "default:deploy": "firebase deploy -P default",
+    "dev:deploy": "firebase deploy -P dev",
     "qa:deploy": "firebase deploy -P qa",
     "emulate": "firebase emulators:start"
   },
