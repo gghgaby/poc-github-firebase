@@ -48,5 +48,4 @@ jobs:
         with:
           args:  deploy --only hosting --project dev
         env:
-          name: dev
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
