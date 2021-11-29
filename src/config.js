@@ -1,4 +1,4 @@
-/*const firebaseConfig = {
+const firebaseConfig = {
   apiKey: String(process.env.API_KEY),
   authDomain: String(process.env.AUTH_DOMAIN),
   projectId: String(process.env.PROJECT_ID),
@@ -7,7 +7,7 @@
   appId: String(process.env.APP_ID),
   measurementId: String(process.env.MEASUREMENT_ID)
 };
-export default firebaseConfig;*/
+export default firebaseConfig;
 
 
 
@@ -16,7 +16,7 @@ export default firebaseConfig;*/
 
 
 
-const firebaseConfig = {
+/*const firebaseConfig = {
   apiKey: "AIzaSyAqET6uC4Sb4TYnGeu5DVdkY6kTXJvZp-0",
   authDomain: "pied-piper-dev.firebaseapp.com",
   projectId: "pied-piper-dev",
@@ -24,4 +24,4 @@ const firebaseConfig = {
   messagingSenderId: "129688927360",
   appId: "1:129688927360:web:a734f9f64ea5b6f40a7a65",
   measurementId: "G-80M0VF8CDT"
-};
+};*/
