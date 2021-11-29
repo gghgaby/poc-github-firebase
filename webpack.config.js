@@ -2,6 +2,8 @@ const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const Dotenv = require("dotenv-webpack");
+
 
 module.exports = (env) =>  {
   return {
@@ -83,6 +85,11 @@ module.exports = (env) =>  {
         filename:  "[name].[fullhash].css",
         chunkFilename: "[name]/[name].[fullhash].css"
       }),
+      new webpack.DefinePlugin({
+        env: {
+          NODE_ENV: JSON.stringify(env),
+        },
+      }),
       new HtmlWebpackPlugin({
         filename: "index.html",
         template: "public/index.html",
@@ -94,6 +101,9 @@ module.exports = (env) =>  {
         template: "public/index.html",
         inject: true,
         chunks: ["app"]
+      }),
+      new Dotenv({
+        path: `./config.${env.config}.env`,
       }),
     ],
     devServer: {

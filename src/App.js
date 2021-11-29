@@ -43,6 +43,7 @@ export default function App() {
   return (
     <Fragment>
       <Loading hidden={!loading}/>
+      <h1>Firebase + GitHub Actions</h1>
       <div className="container">
         <h2>Welcome {userName}</h2>
         <button
