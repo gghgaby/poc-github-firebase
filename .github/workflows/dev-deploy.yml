@@ -1,4 +1,4 @@
-name: Build and Deploy to Develop Firebase project 
+name: Build and Deploy to Develop Firebase project
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ jobs:
     name: Build from Develop branch
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repox
+      - name: Checkout Repo
         uses: actions/checkout@master
       - name: Install Dependencies
         run: npm install
@@ -46,6 +46,6 @@ jobs:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args:  deploy --only hosting --project pied-piper-dev
+          args:  deploy --only hosting --project dev
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
