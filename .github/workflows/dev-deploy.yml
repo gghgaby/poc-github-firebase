@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - develop
-
 jobs:
   build:
     name: Build from Develop branch
