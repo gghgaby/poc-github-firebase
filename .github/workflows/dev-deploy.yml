@@ -8,6 +8,9 @@ jobs:
   build:
     name: Build from Develop branch
     runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: https://github.com
     steps:
       - name: Checkout Repox
         uses: actions/checkout@master

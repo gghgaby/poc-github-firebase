@@ -6,6 +6,9 @@ jobs:
   build:
     name: Build from QA branch
     runs-on: ubuntu-latest
+    environment:
+      name: qa
+      url: https://github.com
     steps:
       - name: Checkout Repox
         uses: actions/checkout@master
