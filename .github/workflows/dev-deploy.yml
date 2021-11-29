@@ -25,7 +25,7 @@ jobs:
           envkey_MEASUREMENT_ID: ${{ secrets.MEASUREMENT_ID}}
           file_name: .env
       - name: Build
-        run: npm run build-dev
+        run: npm run dev:build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
