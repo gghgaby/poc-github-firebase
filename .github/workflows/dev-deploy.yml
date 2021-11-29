@@ -1,4 +1,4 @@
-name: Build and Deploy to Develop
+name: Build and Deploy to Develop Firebase project 
 on:
   push:
     branches:
