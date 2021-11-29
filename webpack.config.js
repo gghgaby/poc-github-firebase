@@ -102,9 +102,7 @@ module.exports = (env) =>  {
         inject: true,
         chunks: ["app"]
       }),
-      new Dotenv({
-        path: `./config.${env.config}.env`,
-      }),
+      new Dotenv(),
     ],
     devServer: {
       contentBase: path.join(__dirname, "build"),
