@@ -44,6 +44,7 @@ export default function App() {
     <Fragment>
       <Loading hidden={!loading}/>
       <h1>Firebase + GitHub Actions v2</h1>
+      <h3>Globant</h3>
       <div className="container">
         <h2>Welcome {userName}!</h2>
         <button
